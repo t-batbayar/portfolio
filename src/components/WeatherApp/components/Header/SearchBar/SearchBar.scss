@@ -1,0 +1,18 @@
+.SearchBar {
+   .SearchInput {
+      color: #fff;
+      border: none;
+      border-bottom: 1px solid var(--light-gray);
+      background: none;
+      font-size: 2rem;
+      padding: 2rem 0 2rem 1rem;
+      width: 100%;
+      &:focus {
+         outline: 1px solid rgba(255, 255, 255, 0.3);
+         border-bottom: 1px solid #fff;
+      }
+   }
+   input::placeholder {
+      color: #ddd;
+   }
+}

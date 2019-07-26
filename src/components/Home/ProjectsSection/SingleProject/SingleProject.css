@@ -1,0 +1,161 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.item:nth-of-type(even) .item__img {
+    order: 1;
+    margin: 0 2rem 0 0;
+}
+
+.item:nth-of-type(even) .item__info {
+    order: 0;
+    margin: 0;
+}
+
+.item__img {
+    flex-basis: 50%;
+    flex-grow: 0;
+    margin: 0;
+}
+
+.item__img img {
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.item__info {
+    flex-basis: 50%;
+    flex-grow: 0;
+    margin: 0 0 0 2rem;
+}
+
+.item__title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem;
+}
+
+.item__desc {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-top: 0;
+}
+
+.item__links {
+    margin: 1.5rem 0;
+}
+
+.item__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: var(--blue);
+    text-decoration: none;
+    padding: 4px 0;
+    margin: 0 3rem 0 0;
+}
+
+.item__link::after {
+    background-color: var(--blue);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transition: var(--main-transition);
+}
+
+.item__link:hover.item__link::after {
+    opacity: 1;
+}
+
+.item__link img {
+    display: inline-block;
+    margin-right: 5px; 
+}
+
+.item__stack__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem;
+}
+
+.item__stack__list {
+    font-size: 2rem;
+    margin: 0;
+    padding-left: 2.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+
+    .item:nth-of-type(even) .item__img {
+        margin: 0;
+        order: 0;
+    }
+
+    .item:nth-of-type(even) .item__info {
+        margin: 0;
+        order: 1;
+    }
+
+    .item__img {
+        margin: 0;
+    }
+    .item__info {
+        margin: 0;
+    }
+
+    .item__title {
+        font-size: 2.3rem;
+        margin-top: 1em;
+    }
+
+    .item__desc {
+        font-size: 1.8rem;
+    }
+
+    .item__link {
+        font-size: inherit;
+    }
+
+    .item__stack__title {
+        font-size: 2rem;
+    }
+
+    .item__stack__list {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .item__title {
+        font-size: 1.8rem;
+        margin-top: 1em;
+    }
+
+    .item__desc {
+        font-size: 1.8rem;
+    }
+
+    .item__link {
+        font-size: inherit;
+    }
+
+    .item__stack__title {
+        font-size: 2rem;
+    }
+
+    .item__stack__list {
+        font-size: 2rem;
+    }
+}

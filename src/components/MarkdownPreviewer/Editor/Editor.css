@@ -1,0 +1,31 @@
+.EditorContainer {
+	background: #fff;
+	border: 1px solid #777;
+	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.8);
+	margin: 0 auto;
+	max-width: 800px;
+	width: 100%;
+}
+
+.EditorTitle {
+	font-weight: 600;
+	background: var(--markdown-main-color);
+	margin: 0;
+	padding: 10px;
+}
+
+.Editor {
+	border: none;
+	overflow-y: scroll;
+	height: calc(90vh - 60px);
+	width: 100%;
+	padding: 10px 10px 0;
+	resize: none;
+}
+
+@media only screen and (max-width: 1000px) {
+	.EditorContainer {
+		margin: 0 auto 30px;
+		height: initial;
+	}
+}

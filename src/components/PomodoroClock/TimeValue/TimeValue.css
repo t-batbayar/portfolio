@@ -1,0 +1,34 @@
+.TimeValue {
+	font-size: 48px;
+	text-align: center;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 90px;
+}
+
+.TimeValue__label {
+	color: #dedede;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 4px 0 0;
+	letter-spacing: 3px;
+}
+
+.TimeValue__value {
+	font-size: 48px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.TimeValue__value__handler {
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.TimeValue__value__handler:hover {
+	color: #dedede;
+}

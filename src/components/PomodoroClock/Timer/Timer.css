@@ -1,0 +1,25 @@
+.Timer {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+
+.Timer__label {
+   color: #8c8c8c;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 4px 0 0;
+	letter-spacing: 3px;
+}
+
+.Timer__time {
+   font-variant: normal;
+   font-variant-numeric: tabular-nums;
+   display: flex;
+   flex: 1;
+   justify-content: center;
+   align-items: center;
+   font-size: 60px;
+	transition: all 0.3s ease;
+}

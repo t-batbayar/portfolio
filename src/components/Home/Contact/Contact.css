@@ -1,0 +1,52 @@
+.ContactInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ContactListItem {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Icon {
+    font-size: 3rem;
+}
+
+.Link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.Text {
+    font-size: 2rem;
+    margin: 0 0 0 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .ContactListItem {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Icon {
+        font-size: 2.4rem;
+    }
+    .Text {
+        font-size: 1.6rem;
+        margin: 0 0 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .Icon {
+        font-size: 2rem;
+    }
+    .Text {
+        font-size: 1.2rem;
+        margin: 0 0 0 2rem;
+    }
+}

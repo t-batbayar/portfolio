@@ -1,0 +1,260 @@
+.Home {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+}
+
+.NavMobileMenuShowIcon {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+
+.NavMobileMenuShowIcon__Icon {
+	width: 36px;
+}
+
+.HeroTextContainer {
+	width: 480px;
+	max-width: 480px;
+	position: relative;
+}
+
+.HeroTextContainer svg path {
+	stroke-dasharray: 2000;
+	stroke-dashoffset: 2000;
+	animation: dash 3s forwards;
+}
+
+.HeroText {
+	width: 520px;
+	font-weight: 400;
+	position: absolute;
+	top: 22rem;
+	left: 0;
+	margin: 0;
+}
+
+.HeroText__Greeting {
+	font-size: 3.8rem;
+	margin: 0 0 2rem;
+}
+
+.HeroText__Name {
+	font-size: 4.6rem;
+	margin: 0 0 2rem;
+}
+
+.HeroText__Blue {
+	color: var(--blue);
+}
+
+.HeroText__Info {
+	font-size: 4.8rem;
+	color: var(--text-inactive); 
+	margin: 0;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@media only screen and (max-width: 860px) {
+	.NavMobileMenuShowIcon {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 764px) {
+	.HeroTextContainer {
+		width: 400px;
+		max-width: 400px;
+	}
+	.HeroText {
+		width: 460px;
+		top: 180px;
+	}
+		
+	.HeroText__Name {
+		font-size: 36px;
+	}
+	
+	.HeroText__Info {
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	.HeroTextContainer {
+		width: 360px;
+		max-width: 360px;
+	}
+	.HeroText {
+		width: 420px;
+		top: 160px;
+	}
+		
+	.HeroText__Name {
+		font-size: 32px;
+	}
+	
+	.HeroText__Info {
+		font-size: 36px;
+	}
+}
+
+@media only screen and (max-width: 610px) {
+	.HeroTextContainer {
+		width: 320px;
+		max-width: 320px;
+	}
+	.HeroText {
+		width: 120%;
+		top: 140px;
+	}
+		
+	.HeroText__Name {
+		font-size: 30px;
+	}
+	
+	.HeroText__Info {
+		font-size: 32px;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.HeroTextContainer {
+		width: 300px;
+		max-width: 300px;
+	}
+	.HeroText {
+		width: 120%;
+		top: 140px;
+	}
+		
+	.HeroText__Name {
+		font-size: 28px;
+	}
+	
+	.HeroText__Info {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+	.HeroTextContainer {
+		width: 280px;
+		max-width: 280px;
+	}
+	.HeroText {
+		width: 120%;
+		top: 130px;
+	}
+		
+	.HeroText__Name {
+		font-size: 25px;
+	}
+	
+	.HeroText__Info {
+		font-size: 26px;
+	}
+}
+
+@media only screen and (max-width: 490px) {
+	.HeroTextContainer {
+		width: 260px;
+		max-width: 260px;
+	}
+	.HeroText {
+		width: 120%;
+		top: 120px;
+	}
+		
+	.HeroText__Name {
+		font-size: 23px;
+	}
+	
+	.HeroText__Info {
+		font-size: 24px;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.HeroTextContainer {
+		width: 240px;
+		max-width: 240px;
+	}
+	.HeroText {
+		width: 120%;
+		top: 110px;
+	}
+		
+	.HeroText__Name {
+		font-size: 21px;
+	}
+	
+	.HeroText__Info {
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	.HeroTextContainer {
+		width: 230px;
+		max-width: 230px;
+	}
+	.HeroText {
+		width: 120%;
+		top: 105px;
+	}
+		
+	.HeroText__Name {
+		font-size: 20px;
+	}
+	
+	.HeroText__Info {
+		font-size: 21px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.HeroTextContainer {
+		width: 190px;
+		max-width: 190px;
+	}
+	.HeroText {
+		width: 120%;
+		top: 85px;
+	}
+		
+	.HeroText__Name {
+		font-size: 16px;
+	}
+	
+	.HeroText__Info {
+		font-size: 17px;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+
+}
+
+@media only screen and (max-width: 430px) {
+
+}
+
+@media only screen and (max-width: 360px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}

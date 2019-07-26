@@ -1,0 +1,95 @@
+.QuoteWrapper {
+	color: white;
+	max-width: 640px;
+	margin: 0 auto;
+	padding: calc(100vh - 70vh) 20px 0;
+}
+
+.QuoteController {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.Tweet,
+.NewQuote {
+	font-family: inherit;
+	cursor: pointer;
+	background: none;
+	border-radius: 2px;
+	font-size: 12px;
+	color: white;
+	border: 2px solid white;	
+	text-decoration: none;
+	padding: 4px 24px;
+	z-index: 1;
+}
+
+.QuoteAuthor {
+	position: relative;
+	font-family: 'Dancing Script', cursive;
+	font-size: 24px;
+	margin: 60px 0 20px;
+	height: 40px;
+}
+
+.QuoteAuthor p {
+	margin: 0;
+}
+
+.QuoteTextContainer {
+	position: relative;
+	font-size: 24px;
+	font-weight: 200;
+}
+
+.QuoteText {
+	text-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+	padding: 0 70px;
+}
+
+.DoubleQuoteStart,
+.DoubleQuoteEnd {
+	position: absolute;
+	font-family: 'Palanquin', sans-serif;
+	font-size: 160px;
+	line-height: 0;
+}
+
+.DoubleQuoteStart {
+	text-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+	left: 0;
+	top: 0;
+	transform: rotate(180deg);
+}
+
+.DoubleQuoteEnd {
+	text-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+	top: 58px;
+	right: 0;
+}
+
+@media screen and (max-width: 600px) {
+	.QuoteAuthor {
+		font-size: 32px;
+		height: 64px;
+	}
+
+	.QuoteTextContainer {
+		font-size: 16px;
+	}
+
+	.QuoteText {
+		padding: 0 40px;
+	}
+
+	.DoubleQuoteStart,
+	.DoubleQuoteEnd {
+		font-size: 80px;
+	}
+
+	.DoubleQuoteEnd {
+		top: 28px;
+	}
+
+}

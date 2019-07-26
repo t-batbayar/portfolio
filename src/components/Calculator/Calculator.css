@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+.CalculatorContainer {
+	background-image: linear-gradient(to right top, #cddc39, #00da79, #00c9cf, #00adff, #0080ff);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.Calculator {
+	box-shadow: 0 4px 32px -4px rgba(0, 0, 0, 0.5);
+	border: 1px solid #cdcdcd;
+	border-radius: 3px;
+	padding: 6px;
+	width: 320px;
+	height: 480px;
+	display: grid;
+	grid-gap: 2px 2px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr 3fr 3fr 3fr 3fr 3fr;
+	grid-template-areas: 	"inputs inputs inputs inputs" 
+							"display display display display"
+							"operators operators operators operators" 
+							"numbers numbers numbers controllers" 
+							"numbers numbers numbers controllers" 
+							"numbers numbers numbers controllers" 
+							"numbers numbers numbers controllers";
+}
+
+.Calculator button {
+	cursor: pointer;
+	background: #eee;
+	border: 1px solid #cdcdcd;
+	border-radius: 1px;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 16px;
+	opacity: 0.6;
+	transition: all 0.2s ease;
+}
+
+.Calculator button:hover {
+	opacity: 0.8;
+	background-color: #fefefe;
+}
+
+.Inputs {
+	font-size: 10px;
+	grid-area: inputs;
+	min-height: 28px;
+	white-space: nowrap;
+	text-align: right;
+}
+
+.Display {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 24px;
+	text-shadow: 0 0 4px -1px rgba(255, 255, 255, 1);
+	grid-area: display;
+	text-align: right; 
+}

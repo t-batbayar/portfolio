@@ -1,0 +1,144 @@
+:root {
+	--blue: #0080ff;
+	--text-color: #1d1d1d;
+	--text-inactive: #bdc7d1;
+	--main-transition: all 0.3s ease;
+	--markdown-main-color: #FF7043;
+}
+
+/* 
+	Default 16px * 0.625 = 10rem
+	1.2rem = 12px
+*/
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6rem;
+	color: var(--text-color);
+	line-height: 1.5;
+}
+
+:global(.container) {
+	max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 60px;
+	overflow: hidden;
+}
+
+:global(.section) {
+	padding: 4% 0;
+}
+
+:global(.section_home) {
+	padding: 0;
+}
+
+:global(.section_blue) {
+	color: #fff;
+	background-color: var(--blue);
+}
+
+:global(.section__header) {
+	font-size: 6rem;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	margin: 0 0 2.5rem;
+}
+
+:global(.section__header::before) {
+	content: '';
+	background-color: var(--text-color);
+	display: inline-block;
+	height: 4px;
+	width: 10%;
+	margin-right: 2.5rem;
+}
+
+:global(.section_blue .section__header::before) {
+	background-color: #fff;
+}
+
+:global(.section__header::after) {
+	content: '';
+	background-color: var(--text-color);
+	display: inline-block;
+	height: 4px;
+	flex-grow: 1;
+	margin-left: 2.5rem;
+}
+
+:global(.section_blue .section__header::after) {
+	background-color: #fff;
+}
+
+:global(.section__subheader) {
+	font-size: 4rem;
+	font-weight: 400;
+}
+
+@media only screen and (max-width: 1100px) {
+	:global(.section__header) {
+		font-size: 4rem;
+		font-weight: 400;
+		display: flex;
+		align-items: center;
+		margin: 0 0 2.5rem;
+	}
+
+	:global(.section__header::before) {
+		height: 2px;
+	}
+
+	:global(.section__header::after) {
+		height: 2px;
+	}
+
+	:global(.section__subheader) {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	:global(.section__header) {
+		font-size: 3rem;
+	}
+	:global(.section__subheader) {
+		font-size: 2.4rem;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	:global(.container) {
+		padding: 0 30px;
+	}
+
+	:global(.section__header) {
+		font-size: 2.6rem;
+	}
+
+	:global(.section__header::before) {
+		display: none;
+	}
+
+	:global(.section__subheader) {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	:global(.section__header::after) {
+		display: none;
+	}
+	:global(.section__subheader) {
+		font-size: 1.8rem;
+	}
+}

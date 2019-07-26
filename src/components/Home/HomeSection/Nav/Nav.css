@@ -1,0 +1,43 @@
+.Nav {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+
+.Nav_link {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.6rem;
+	color: var(--text-color);
+	transition: var(--main-transition);
+	text-decoration: none;
+}
+
+.Nav_link:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.Nav_link:hover {
+	color: var(--blue);
+}
+
+.Nav_link:first-child {
+	font-weight: 400;
+	color: var(--blue);
+}
+
+.Nav_link:first-child:after {
+	content: '';
+	display: inline-block;
+	height: 2px;
+	width: 38px;
+	margin-left: 1rem;
+	vertical-align: middle;
+	background: var(--blue);
+}
+
+@media only screen and (max-width: 860px) {
+	.Nav {
+		display: none;
+	}
+}

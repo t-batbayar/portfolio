@@ -1,0 +1,58 @@
+{
+	"projects": [
+		{
+			"id": "1",
+			"name": "Цаг агаар",
+			"description": "Цаг агаарын урьдчилсан 5 хоногийн мэдээллийг харуулдаг цаг агаарын вэб апп. Mapbox API-ийг хайх газрын мэдээллийг олж нэрийг харуулахад, Openweathermap API-ийг цаг агаарын мэдээллийг авахад ашигласан.",
+			"image": "weather.jpg",
+			"link": "weather-app",
+			"github": "https://github.com/t-batbayar/weather-app",
+			"stacks": ["HTML", "CSS", "JavaScript", "React", "Redux", "Sass"]
+		},
+		{
+			"id": "2",
+			"name": "Помодоро цаг",
+			"description": "Анхаарлаа төвлөрүүлэх сургуулилт хийхэд тус болох помодоро цаг. Хугацаа дуусах үед сэрүүлэг дугарч дохио өгөх ба түр цагийг зогсоож болон үргэлжлүүлэх боломжтой.",
+			"image": "pomodoro-clock.jpg",
+			"link": "pomodoro-clock",
+			"github": "https://github.com/t-batbayar/pomodoro-clock",
+			"stacks": ["HTML", "CSS", "Sass", "JavaScript", "React"]
+		},
+		{
+			"id": "3",
+			"name": "Эшлэл",
+			"description": "React-ийг Redux-тай хамт хэрэглэж үзэх зорилгоор хийсэн алдартай хүмүүсийн эшлэлийг харуулагч.",
+			"image": "random-quote.jpg",
+			"link": "random-quote",
+			"github": "https://github.com/t-batbayar/random-quote",
+			"stacks": ["HTML", "CSS", "JavaScript", "React", "Redux"]
+		},
+		{
+			"id": "4",
+			"name": "Тооны машин",
+			"description": "Олон дэс дараалсан арифметик үйлдлүүдээс үржих, хуваах үйлдлүүдийг эхлэн гүйцэтгэсний дараа нэмэх, хасах үйлдлүүдийг гүйцэтгэдэг давуу талтай.",
+			"image": "calculator.jpg",
+			"link": "calculator",
+			"github": "https://github.com/t-batbayar/calculator",
+			"stacks": ["HTML", "CSS", "JavaScript", "React"]
+		},
+		{
+			"id": "5",
+			"name": "Маркдаун тэмдэглэгээт хэл хувиргагч (Markdown Previewer)",
+			"description": "React санд дадлагажих зорилгоор хийсэн жирийн текстийг HTML болгож харуулагч.",
+			"image": "markdown-previewer.jpg",
+			"link": "markdown-previewer",
+			"github": "https://github.com/t-batbayar/markdown-previewer",
+			"stacks": ["HTML", "CSS", "JavaScript", "React"]
+		},
+		{
+			"id": "6",
+			"name": "Бөмбөр",
+			"description": "FreeCodeCamp.org-ийн фронт энд хөгжүүлэгчийн сертификат авахдаа хийсэн бөмбөр тоглогч. ",
+			"image": "drum-machine.jpg",
+			"link": "drum-machine",
+			"github": "https://github.com/t-batbayar/drum-machine",
+			"stacks": ["HTML", "CSS", "JavaScript", "React"]
+		}
+	]
+}

@@ -1,0 +1,12 @@
+.MarkdownPreviewer {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.MarkdownPreviewer {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+}

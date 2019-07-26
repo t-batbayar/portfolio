@@ -1,0 +1,9 @@
+.DrumPad {
+	cursor: pointer;
+	background-color: #B9E28C;
+	border-radius: 4px;
+	box-shadow: 0 2px 8px -6px rgba(0, 0, 0, 0.9);
+	display: inline-block;
+	text-align: center;
+	padding: 20px 25px;
+}

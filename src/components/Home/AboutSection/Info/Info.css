@@ -1,0 +1,93 @@
+.Info {
+	display: flex;
+	flex-direction: row;
+	font-weight: 300;
+	justify-content: space-between;
+	margin: 0 0 4rem;
+}
+
+.Info__text {
+	font-size: 2.3rem;
+	width: 57%;
+	margin-right: 3rem;
+}
+
+.Info__advantage {
+	width: 45%;
+	font-size: 2rem;
+}
+
+.Info__advantage__item {
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 1rem;
+}
+
+.Info__advantage__item__key {
+	font-weight: 600;
+	margin: 0;
+	min-width: 110px;
+}
+
+.Info__advantage__item__value {
+	margin: 0;
+}
+
+@media only screen and (max-width: 1100px) {
+	.Info__text {
+		font-size: 1.8rem;
+	}
+
+	.Info__advantage {
+		font-size: 1.6rem;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.Info {
+		flex-direction: column;
+		justify-content: initial;
+	}
+
+	.Info__text {
+		margin: 0 0 2rem;
+		width: 100%;
+	}
+
+	.Info__advantage {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.Info__text {
+		font-size: 1.6rem;
+	}
+
+	.Info__advantage {
+		font-size: 1.4rem;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.Info__advantage__item {
+		flex-direction: column;
+	}
+	.Info__advantage__item__key {
+		margin: 0 0 1rem;
+	}
+
+	.Info__advantage__item__value {
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.Info__text {
+		font-size: 1.4rem;
+	}
+
+	.Info__advantage {
+		font-size: 1.2rem;
+	}
+}

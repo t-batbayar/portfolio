@@ -1,0 +1,92 @@
+.PreviewerContainer {
+	background: #fff;
+	border: 1px solid #777;
+	box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.8);
+	margin: 0 auto;
+	max-width: 800px;
+	width: 100%;
+}
+
+.PreviewerTitle {
+	font-weight: 600;
+	background: var(--markdown-main-color);
+	margin: 0;
+	padding: 10px;
+}
+
+.Previewer {
+	height: calc(90vh - 60px);
+	overflow-y: scroll;
+	padding: 10px;
+}
+
+.Previewer h1,
+.Previewer h2,
+.Previewer h3,
+.Previewer h4,
+.Previewer h5,
+.Previewer h6 {
+	font-family: serif;
+}
+
+.Previewer h1 {
+	border-bottom: 2px solid #444;
+}
+
+.Previewer h2 {
+	border-bottom: 2px solid #444;
+}
+
+.Previewer pre {
+	background: #FFFFCF;
+	padding: 10px 0 10px 20px;
+}
+
+.Previewer blockquote {
+	background: #f2f2f2;
+	margin: 0;
+	padding: 1em 40px;
+}
+
+.Previewer blockquote p {
+	border-left: 2px solid var(--markdown-main-color);
+	padding-left: 5px;
+}
+
+.Previewer th {
+  background-color: var(--markdown-main-color);
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.Previewer td, .Previewer th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.Previewer img {
+	width: 100%;
+}
+
+.Previewer tr:nth-child(even){background-color: #f2f2f2;}
+
+.Previewer tr:hover {background-color: #ddd;}
+
+@media only screen and (max-width: 1000px) {
+	.EditorContainer {
+		height: initial;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.Previewer code {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.Previewer code {
+		font-size: 0.8rem;
+	}
+}

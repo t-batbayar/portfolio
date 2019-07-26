@@ -1,0 +1,30 @@
+.Numbers {
+	display: grid;
+	grid-gap: 2px 2px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "seven eight nine" "four five six" "one two three" "zero zero decimal";
+	grid-area: numbers;
+}
+
+.Zero { grid-area: zero; }
+
+.Decimal { grid-area: decimal; }
+
+.One { grid-area: one; }
+
+.Two { grid-area: two; }
+
+.Three { grid-area: three; }
+
+.Four { grid-area: four; }
+
+.Five { grid-area: five; }
+
+.Six { grid-area: six; }
+
+.Seven { grid-area: seven; }
+
+.Eight { grid-area: eight; }
+
+.Nine { grid-area: nine; }

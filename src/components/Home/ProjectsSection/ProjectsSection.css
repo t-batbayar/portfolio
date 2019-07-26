@@ -1,0 +1,10 @@
+.ShowMore {
+   cursor: pointer;
+   background: #fff;
+   border: 2px solid var(--text-color);
+   font-size: 1.8rem;
+   text-align: center;
+   display: block;
+   padding: 1rem 0;
+   width: 100%;
+}

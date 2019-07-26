@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Orbitron|Palanquin&display=swap');
+
+.RandomQuoteMachine {
+   font-family: 'Noto Serif', serif;
+	min-height: 100vh;
+	transition: var(--main-transition);
+}
